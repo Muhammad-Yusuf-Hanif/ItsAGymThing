@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+html {
+	margin-top: 60px;
+}
+
+body {
+	font-size: large;
+	font-family: Roboto, arial;
+	line-height: 1.4;
+}
+
+p {
+	font-family: Roboto, arial;
+}
+
+.exercises {
+	display: inline-block;
+}
+
+.navBar {
+	overflow: hidden;
+	background-color: #606060;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 55px;
+	/* transition: 1s; */
+	left: 0px;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.navBar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navBar a:hover {
+	background: #ddd;
+	color: black;
+	font-size: larger;
+}
+
+input[name="searchBar"] {
+	border-radius: 4px;
+	width: 60px;
+	transition: width 0.4s ease-in-out;
+	margin: 5px 0 5px 30%;
+	font-size: 15px;
+}
+
+input[name="searchBar"]:focus {
+	width: 20%;
+}
+
+/* ----------------------------------------------------------------------- HOME ----------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------- CHEST ----------------------------------------------------------------------- */
+
+.chest {
+	display: inline-block;
+	font-weight: bolder;
+	max-width: 46%;
+	margin-right: 3%;
+	margin-bottom: 75px;
+}
+
+.dumbbellChestPress {
+	font-weight: 450;
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 8px;
+}
+
+/* ---------------------------------------------------------------------- SHOULDERS --------------------------------------------------------------------- */
+
+.shoulders {
+	display: inline-block;
+	font-weight: bolder;
+	max-width: 46%;
+	margin-right: 3%;
+	vertical-align: top;
+	margin-bottom: 75px;
+}
+
+.dumbbellShoulderPress {
+	font-weight: 450;
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 8px;
+}
+
+/* ------------------------------------------------------------------------ BACK ------------------------------------------------------------------------ */
+
+.back {
+	display: inline-block;
+	font-weight: bolder;
+	max-width: 46%;
+	margin-right: 3%;
+	vertical-align: top;
+	margin-bottom: 75px;
+}
+
+.deadlifts {
+	font-weight: 450;
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 8px;
+}
+
+/* ------------------------------------------------------------------------ LEGS ------------------------------------------------------------------------ */
+
+.legs {
+	display: inline-block;
+	font-weight: bolder;
+	max-width: 46%;
+	margin-right: 3%;
+	vertical-align: top;
+	margin-bottom: 75px;
+}
+
+.squats {
+	font-weight: 450;
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 8px;
+}
+
+/* ----------------------------------------------------------------------- CARDIO ----------------------------------------------------------------------- */
+
+.cardio {
+	display: inline-block;
+	font-weight: bolder;
+	max-width: 46%;
+	margin-right: 3%;
+	vertical-align: top;
+}
+
+.two2too {
+	font-weight: 450;
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 8px;
+}
