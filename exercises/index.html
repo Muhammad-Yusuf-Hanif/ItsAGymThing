@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+	<script src="../scripts/index.js"></script>
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>It's a Gym Thing</title>
-		<link rel="stylesheet" href="styles/styles.css" />
-    
+		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<div class="navBar">
-			<a href="#Home">Home</a>
-			<a href="#Exercises">Exercises</a>
-			<a href="#Videos">Videos</a>
-			<a href="#FAQ">FAQs & Forums</a>
-			<a href="#ContactUS">Contact Us</a>
-      <input type="text" Name="searchBar" placeholder="Search...">
-		</div>
+		<div id="navbar"></div>
 
 		<div class="MainPage">
 			<div class="Exercises">
-				<div class="chest">
+				<div class="title">
 					Chest Exercises
 					<div class="accordion">
 						<div class="label">
-							<div class="dumbbellChestPress">
+							<div class="exerciseText">
 								Dumbbell Chest Press: <br />
 								In this exercise you will concentrate on keeping the correct
 								form to reduce any chance of injury. The best way of doing this
@@ -36,15 +29,29 @@
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="Exercises">
-				<div class="chest">
-					Chest Exercises
+				<div class="title">
+					Shoulder Exercises
+					<div class="accordion">
+						<div class="label">Compound</div>
+						<div class="exerciseText">
+							Dumbbell/Military Shoulder Press: <br />
+							In this exercise you will concentrate on keeping the correct form
+							to reduce any chance of injury. The best way of doing this is by
+							ensuring you are setup correctly regardless of the weight. This is
+							due to joints & mobility playing a massive role instead of the
+							chest muscles themselves. See below how to setup on the bench
+							correctly.
+						</div>
+					</div>
+				</div>
+
+				<div class="title">
+					Back Exercises
 					<div class="accordion">
 						<div class="label">
-							<div class="dumbbellChestPress">
-								Dumbbell Chest Press: <br />
+							<div class="exerciseText">
+								Deadlifts <br />
 								In this exercise you will concentrate on keeping the correct
 								form to reduce any chance of injury. The best way of doing this
 								is by ensuring you are setup correctly regardless of the weight.
@@ -55,15 +62,13 @@
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="Exercises">
-				<div class="chest">
-					Chest Exercises
+				<div class="title">
+					Leg Exercises
 					<div class="accordion">
 						<div class="label">
-							<div class="dumbbellChestPress">
-								Dumbbell Chest Press: <br />
+							<div class="exerciseText">
+								Squats <br />
 								In this exercise you will concentrate on keeping the correct
 								form to reduce any chance of injury. The best way of doing this
 								is by ensuring you are setup correctly regardless of the weight.
@@ -74,15 +79,13 @@
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="Exercises">
-				<div class="chest">
-					Chest Exercises
+				<div class="title">
+					Cardio Exercises
 					<div class="accordion">
 						<div class="label">
-							<div class="dumbbellChestPress">
-								Dumbbell Chest Press: <br />
+							<div class="exerciseText">
+								Two2Too <br />
 								In this exercise you will concentrate on keeping the correct
 								form to reduce any chance of injury. The best way of doing this
 								is by ensuring you are setup correctly regardless of the weight.
@@ -93,28 +96,16 @@
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="Exercises">
-				<div class="chest">
-					Chest Exercises
-					<div class="accordion">
-						<div class="label">
-							<div class="dumbbellChestPress">
-								Dumbbell Chest Press: <br />
-								In this exercise you will concentrate on keeping the correct
-								form to reduce any chance of injury. The best way of doing this
-								is by ensuring you are setup correctly regardless of the weight.
-								This is due to joints & mobility playing a massive role instead
-								of the chest muscles themselves. See below how to setup on the
-								bench correctly.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+				<!-- <div class="shoulders">
+          Shoulder Exercises
+            <div class="accordion">
+              <div class="shoulderPress">
 
-			<!-- End of home page  -->
+              </div>
+            </div>
+        </div> -->
+			</div>
 		</div>
 	</body>
 </html>
