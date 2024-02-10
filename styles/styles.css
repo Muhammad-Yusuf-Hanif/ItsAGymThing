@@ -18,7 +18,7 @@ p {
 	display: inline-block;
 }
 
-.root_navbar {
+.navbar {
 	overflow: hidden;
 	background-color: #606060;
 	position: fixed;
@@ -30,7 +30,7 @@ p {
 	box-sizing: border-box;
 }
 
-.root_navbar a {
+.navbar a {
 	float: left;
 	display: block;
 	color: #f2f2f2;
@@ -39,11 +39,10 @@ p {
 	text-decoration: none;
 }
 
-.root_navbar a:hover {
+.navbar a:hover {
 	background: #ddd;
 	color: black;
-	font-size: larger;
-}
+ font-weight: bolder;}
 
 input[name="searchBar"] {
 	border-radius: 4px;
