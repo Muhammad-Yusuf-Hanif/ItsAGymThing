@@ -32,12 +32,15 @@
 				</div>
 
 				<label for="message">Message:</label>
-				<textarea id="message" name="message" rows="4" required></textarea>
+				<textarea
+					id="message"
+					name="message"
+					rows="4"
+					placeholder="Your Message ..."
+					required
+				></textarea>
 
-				<button onclick="sendEmail('junaid', 'yusuf', 'hello world')" type="submit">
-					Say hello mate
-				</button>
-				<button onclick="sendEmail('bro')" type="submit">Say hello bro</button>
+				<button id="sendButton" type="button">Send eMail</button>
 			</form>
 		</div>
 
