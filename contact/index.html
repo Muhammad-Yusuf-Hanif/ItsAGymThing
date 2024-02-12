@@ -24,18 +24,31 @@
 		<div class="contactUsForm">
 			<form id="form">
 				<div class="formRow">
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required />
+					<div class="formName">
+						<label for="name">Name:</label>
+						<input class="name" type="text" id="name" name="name" required />
+					</div>
 
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required />
+					<div class="formEmail">
+						<label for="email">Email:</label>
+						<input
+							class="email"
+							type="email"
+							id="email"
+							name="email"
+							title="Please enter a valid email address"
+							placeholder="Please enter a valid email address"
+							required
+						/>
+					</div>
 				</div>
 
-				<label for="message">Message:</label>
+				<label class="messageTitle" for="message">Message:</label>
 				<textarea
 					id="message"
 					name="message"
-					rows="4"
+					rows="6"
+					cols="76"
 					placeholder="Your Message ..."
 					required
 				></textarea>

@@ -11,32 +11,43 @@ fetch("../components/navbar.html")
 
 const sendButton = document.getElementById("sendButton");
 
-sendButton.addEventListener("click", function () {
+sendButton.addEventListener("click", function (event) {
 	var senderName = document.getElementById("name").value;
 	var senderEmail = document.getElementById("email").value;
 	var senderMessage = document.getElementById("message").value;
 
 	const infoToSend = {
-		from_name: senderName,
-		from_email: senderEmail,
-		message: senderMessage,
+			from_name: senderName,
+			from_email: senderEmail,
+			message: senderMessage,
 	};
 
-	console.log("senderName", senderName);
-	console.log("senderEmail", senderEmail);
-	console.log("senderMessage", senderMessage);
+	// Email validation pattern
+	var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-	emailjs.send("service_4p2b749", "template_xhuyici", infoToSend).then(
-		function (response) {
-			console.log("SUCCESS!", response.status, response.text);
-			console.log("infoToSend", infoToSend);
-			document.getElementById('form').reset();
-		},
-		function (error) {
-			console.log("FAILED...", error);
-		}
-	);
+	// Check if any field is empty
+	if (senderName === '' || senderEmail === '' || senderMessage === '') {
+			alert("Please fill in all the fields.");
+			event.preventDefault(); // Prevent form from submitting
+	} else if (!emailPattern.test(senderEmail)) { // Check if email is valid
+			alert("Please enter a valid email address.");
+			event.preventDefault(); // Prevent form from submitting
+	} else {
+			// If all fields are filled and email is valid, attempt to send the email
+			emailjs.send("service_4p2b749", "template_xhuyici", infoToSend).then(
+					function (response) {
+							console.log("SUCCESS!", response.status, response.text);
+							alert("Email sent successfully!");
+							document.getElementById('form').reset();
+					},
+					function (error) {
+							console.log("FAILED...", error);
+							alert("Failed to send the email.");
+					}
+			);
+	}
 });
+
 
 // function sendEmail(recipient, sender, message) {
 // 	var infoToSend = {
