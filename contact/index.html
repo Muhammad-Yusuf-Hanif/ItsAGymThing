@@ -1,63 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Welcome to It's a Gym Thing</title>
-		<link rel="stylesheet" href="./styles.css" />
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-		></script>
-		<script type="text/javascript">
-			(function () {
-				emailjs.init({
-					publicKey: "MiCKxgNSSjYLjbT2L",
-				});
-			})();
-		</script>
-	</head>
-	<body>
-		<div id="navbar"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to It's a Gym Thing</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div id="navbar"></div>
 
-		<div class="contactUsForm">
-			<form id="form">
-				<div class="formRow">
-					<div class="formName">
-						<label for="name">Name:</label>
-						<input class="name" type="text" id="name" name="name" required />
-					</div>
+        <div class="contactUsForm">
+            <form id="form">
+                <div class="formRow">
+                    <div class="formName">
+                        <label for="name">Name:</label>
+                        <input class="name" type="text" id="name" name="name" required />
+                    </div>
 
-					<div class="formEmail">
-						<label for="email">Email:</label>
-						<input
-							class="email"
-							type="email"
-							id="email"
-							name="email"
-							title="Please enter a valid email address"
-							placeholder="Please enter a valid email address"
-							required
-						/>
-					</div>
-				</div>
+                    <div class="formEmail">
+                        <label for="email">Email:</label>
+                        <input
+                            class="email"
+                            type="email"
+                            id="email"
+                            name="email"
+                            title="Please enter a valid email address"
+                            placeholder="Please enter a valid email address"
+                            required
+                        />
+                    </div>
+                </div>
 
-				<label class="messageTitle" for="message">Message:</label>
-				<textarea
-					id="message"
-					name="message"
-					rows="6"
-					cols="76"
-					placeholder="Your Message ..."
-					required
-				></textarea>
+                <label class="messageTitle" for="message">Message:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    cols="76"
+                    placeholder="Your Message ..."
+                    required
+                ></textarea>
 
-				<button id="sendButton" type="button">Send eMail</button>
-			</form>
-		</div>
+                <button id="sendButton" type="button">Send eMail</button>
+            </form>
+        </div>
 
-		<script src="../scripts/index.js"></script>
+        <script src="../scripts/index.js"></script>
         <script src="./Contact_scripts/index.js"></script>
-	</body>
+    </body>
 </html>
