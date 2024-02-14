@@ -4,12 +4,12 @@ sendButton.addEventListener("click", function (event) {
 	var senderEmail = document.getElementById("email").value;
 	var senderMessage = document.getElementById("message").value.trim();
 
-	console.log(document.getElementById("name").value);
-	console.log(document.getElementById("email").value);
-	console.log(document.getElementById("message").value);
-	console.log("typeof senderName", typeof senderName);
-	console.log("typeof senderEmail", typeof senderEmail);
-	console.log("typeof senderMessage", typeof senderMessage);
+	// console.log(document.getElementById("name").value);
+	// console.log(document.getElementById("email").value);
+	// console.log(document.getElementById("message").value);
+	// console.log("typeof senderName", typeof senderName);
+	// console.log("typeof senderEmail", typeof senderEmail);
+	// console.log("typeof senderMessage", typeof senderMessage);
 
 	const infoToSend = {
 		from_name: senderName,

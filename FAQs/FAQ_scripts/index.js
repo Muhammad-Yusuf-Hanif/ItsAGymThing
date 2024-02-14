@@ -1,38 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-	const faqContainer = document.getElementById("faqContainer");
+function toggleAccordion(itemId) {
+	var item = document.getElementById(itemId);
+	var button = item.querySelector('.accordionBtn');
+	var panel = item.querySelector('.panel');
 
-	for (let i = 1; i <= 6; i++) {
-		let accordion = document.createElement("button");
-		accordion.classList.add("accordion");
-		accordion.innerHTML = `Item ${i} <button class='expandBtn closed'></button>`;
+	button.classList.toggle('open');
 
-		let panel = document.createElement("div");
-		panel.classList.add("panel");
-		panel.textContent = `Content for item ${i}`;
-
-		faqContainer.appendChild(accordion);
-		faqContainer.appendChild(panel);
-
-		accordion.onclick = function () {
-			let expandBtn = this.querySelector(".expandBtn");
-			let isOpen = expandBtn.classList.contains("open");
-
-			// Close all open panels and reset buttons
-			let allExpandButtons = document.querySelectorAll(".expandBtn");
-			allExpandButtons.forEach((btn) => {
-				btn.classList.remove("open");
-				btn.classList.add("closed");
-				btn.parentNode.nextElementSibling.style.display = "none"; // close panel
+	// Check if the panel is open
+	if (panel.style.display === "block") {
+			panel.style.display = "none";
+	} else {
+			// Close all open panels and remove the open class from other buttons
+			document.querySelectorAll('.panel').forEach(function(otherPanel) {
+					otherPanel.style.display = "none";
+			});
+			document.querySelectorAll('.accordionBtn').forEach(function(otherButton) {
+					otherButton.classList.remove('open');
 			});
 
-			// Toggle the current panel
-			if (!isOpen) {
-				expandBtn.classList.remove("closed");
-				expandBtn.classList.add("open");
-				panel.style.display = "block";
-			} else {
-				panel.style.display = "none";
-			}
-		};
+			// Open the current panel and dynamically add the class 
+			panel.style.display = "block";
+			button.classList.add('open');
 	}
-});
+}
+
