@@ -16,7 +16,7 @@ function toggleAccordion(itemId) {
 			document.querySelectorAll('.accordionBtn').forEach(function(otherButton) {
 					otherButton.classList.remove('open');
 			});
-
+			
 			// Open the current panel and dynamically add the class 
 			panel.style.display = "block";
 			button.classList.add('open');
