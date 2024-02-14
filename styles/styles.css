@@ -4,12 +4,6 @@ html {
 	margin-top: 60px;
 }
 
-body {
-	font-size: large;
-	font-family: Roboto, arial;
-	line-height: 1.4;
-}
-
 p {
 	font-family: Roboto, arial;
 }
@@ -57,17 +51,7 @@ input[name="searchBar"]:focus {
 }
 
 /* ----------------------------------------------------------------------- HOME ----------------------------------------------------------------------- */
-/* Hero Section Styling */
-.HeroSection {
-	position: relative;
-	text-align: center;
-}
 
-.HeroImage {
-	width: 100%;
-	height: auto;
-	opacity: 0.8;
-}
 
 .CTAButton {
 	position: absolute;
