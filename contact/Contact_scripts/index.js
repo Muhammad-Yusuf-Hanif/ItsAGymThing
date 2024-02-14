@@ -1,16 +1,15 @@
+(function () {
+	emailjs.init({
+		publicKey: "MiCKxgNSSjYLjbT2L",
+	});
+})();
+
 sendButton.addEventListener("click", function (event) {
 	const sendButton = document.getElementById("sendButton");
 	var senderName = document.getElementById("name").value;
 	var senderEmail = document.getElementById("email").value;
 	var senderMessage = document.getElementById("message").value.trim();
-
-	// console.log(document.getElementById("name").value);
-	// console.log(document.getElementById("email").value);
-	// console.log(document.getElementById("message").value);
-	// console.log("typeof senderName", typeof senderName);
-	// console.log("typeof senderEmail", typeof senderEmail);
-	// console.log("typeof senderMessage", typeof senderMessage);
-
+  
 	const infoToSend = {
 		from_name: senderName,
 		from_email: senderEmail,
@@ -31,9 +30,9 @@ sendButton.addEventListener("click", function (event) {
 	} else if (!emailPattern.test(senderEmail)) {
 		// Check if email is valid
 		alert("Please enter a valid email address.");
-		event.preventDefault(); // Prevent form from submitting
+		event.preventDefault();
 	} else {
-		// If all fields are filled and email is valid, attempt to send the email
+    // If all fields are filled and email is valid, attempt to send the email
 		emailjs.send("service_4p2b749", "template_xhuyici", infoToSend).then(
 			function (response) {
 				console.log("SUCCESS!", response.status, response.text);
