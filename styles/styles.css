@@ -4,10 +4,10 @@ html {
 	/* margin-top: 60px; */
 }
 
-.desktop-navbar, .mobile-navbar{
-	z-index: 999;
+.desktop-navbar,
+.mobile-navbar {
+	z-index: 2;
 	overflow: hidden;
-	background-color: #606060;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -17,26 +17,24 @@ html {
 	box-sizing: border-box;
 }
 
-.desktop-navbar a, .mobile-navbar a {
+.desktop-navbar a,
+.mobile-navbar a {
 	float: left;
 	display: block;
-	color: #ec1515;
-	text-align: center;
+	color: #ffffff;
 	padding: 14px 16px;
 	text-decoration: none;
 }
 
-.desktop-navbar a:hover, .mobile-navbar a:hover {
+.desktop-navbar a:hover,
+.mobile-navbar a:hover {
 	background: #ddd;
 	color: black;
 	font-weight: bolder;
 }
 
-
-
 /* Hamburger icon button */
 .hamburger {
-	
 	z-index: 1;
 	font-size: 40px;
 	right: 5px;
@@ -50,12 +48,7 @@ html {
 }
 
 .hamburger:active {
-	transform: scale(0.5); 
-}
-
-.hamburger:focus {
-	outline: none;
-	outline: 1px solid transparent;
+	transform: scale(0.5);
 }
 
 /* Ensure navbar links are vertically oriented and full width on smaller screens */
@@ -68,8 +61,6 @@ html {
 	.mobile-navbar {
 		display: none;
 	}
-
-
 }
 
 /* Responsive: Display the hamburger icon on smaller screens */
@@ -77,19 +68,40 @@ html {
 	.hamburger {
 		display: flex;
 	}
-	
+
 	.desktop-navbar {
 		display: none;
 	}
 
 	.mobile-navbar {
-		display: none;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		background-color: transparent;
+		padding-top: 20px;
 	}
-
-	
 
 	.navbar-links.active {
 		display: block;
+	}
+
+	.mobile-navbar a {
+		padding: 10px;
+		text-align: left;
+		margin-right: 60px;
+		background-color: rgba(0, 0, 0, 0.571);
+		align-self: flex-end;
+		width: 120px;
+	}
+
+	.mobile-navbar > :first-child {
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+	}
+
+	.mobile-navbar > :last-child {
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
 	}
 }
 
