@@ -1,41 +1,60 @@
-.contactUsForm form {
+.headingContainer {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+		font-size: larger;
+		font-family: roboto, arial;
+		font-weight: bolder;
+}
+
+.contactUsForm {
+	display: flex;
+	justify-content: center;
 	align-items: center;
-	gap: 10px; /* Adjust the space between form elements */
+	margin-top: 5%;
 }
 
 .formRow {
 	display: flex;
-	gap: 20px; /* Space between name and email fields */
+	gap: 20px;
 }
 
 .formRow label,
 .contactUsForm label {
-	margin-right: 10px; /* Adjust label spacing */
+	margin-right: 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
 }
 
 @media (min-width: 800px) {
+	
+.messageTitle {
+	display: flex;
+}
 
 }
 
 @media (max-width: 799px) {
-.contactUsForm form {
-	width: 250px;
-	height: 100vh;
-}
+	.contactUsForm {
+		/* height: 100vh; */
+		justify-content: flex-start;
+	}
+	
+	.name, .email, .message {
+		width: 96% !important;
+	}
 
-.formRow {
-	max-width: 100%;
-}
+	.formRow {
+		flex-direction: column;
+	}
 
-.formName {
-	display: block;
-}
-
-.formEmail {
-	display: block;
-}
+	.formName, .formEmail, .formMessage {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 /* Adjustments for the input fields */
@@ -60,28 +79,10 @@ button:hover {
 	background-color: #0056b3;
 }
 
-.formName {
-	display: flex;
-	justify-content: center; 
-	align-items: center; 
-	height: 100px; 
-}
-
 .name {
 	width: 175px;
 }
 
-.formEmail {
-	display: flex;
-	justify-content: center; 
-	align-items: center; 
-	height: 100px; 
-}
-
 .email {
 	width: 15.1em;
-}
-
-.messageTitle {
-	display: flex;
 }

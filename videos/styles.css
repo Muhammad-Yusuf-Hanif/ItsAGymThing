@@ -3,7 +3,8 @@ html {
 }
 
 .container {
-  text-align: center;  
+  text-align: center;
+  font-weight: lighter !important;
 }
 
 .chestExercises {
