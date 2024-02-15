@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 html {
-	margin-top: 60px;
+	/* margin-top: 60px; */
 }
 
-.navbar {
+.desktop-navbar, .mobile-navbar{
 	z-index: 999;
 	overflow: hidden;
 	background-color: #606060;
@@ -17,19 +17,80 @@ html {
 	box-sizing: border-box;
 }
 
-.navbar a {
+.desktop-navbar a, .mobile-navbar a {
 	float: left;
 	display: block;
-	color: #f2f2f2;
+	color: #ec1515;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
 
-.navbar a:hover {
+.desktop-navbar a:hover, .mobile-navbar a:hover {
 	background: #ddd;
 	color: black;
 	font-weight: bolder;
+}
+
+
+
+/* Hamburger icon button */
+.hamburger {
+	
+	z-index: 1;
+	font-size: 40px;
+	right: 5px;
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.hamburger:active {
+	transform: scale(0.5); 
+}
+
+.hamburger:focus {
+	outline: none;
+	outline: 1px solid transparent;
+}
+
+/* Ensure navbar links are vertically oriented and full width on smaller screens */
+.navbar-links {
+	display: none;
+	width: 100%;
+}
+
+@media (min-width: 800px) {
+	.mobile-navbar {
+		display: none;
+	}
+
+
+}
+
+/* Responsive: Display the hamburger icon on smaller screens */
+@media screen and (max-width: 799px) {
+	.hamburger {
+		display: flex;
+	}
+	
+	.desktop-navbar {
+		display: none;
+	}
+
+	.mobile-navbar {
+		display: none;
+	}
+
+	
+
+	.navbar-links.active {
+		display: block;
+	}
 }
 
 input[name="searchBar"] {
