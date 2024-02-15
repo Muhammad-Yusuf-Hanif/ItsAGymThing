@@ -5,6 +5,7 @@ html {
 }
 
 .navbar {
+	z-index: 999;
 	overflow: hidden;
 	background-color: #606060;
 	position: fixed;
