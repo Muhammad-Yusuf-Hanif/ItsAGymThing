@@ -4,14 +4,6 @@ html {
 	margin-top: 60px;
 }
 
-p {
-	font-family: Roboto, arial;
-}
-
-.exercises {
-	display: inline-block;
-}
-
 .navbar {
 	overflow: hidden;
 	background-color: #606060;
@@ -36,7 +28,8 @@ p {
 .navbar a:hover {
 	background: #ddd;
 	color: black;
- font-weight: bolder;}
+	font-weight: bolder;
+}
 
 input[name="searchBar"] {
 	border-radius: 4px;
@@ -48,97 +41,4 @@ input[name="searchBar"] {
 
 input[name="searchBar"]:focus {
 	width: 20%;
-}
-
-/* ----------------------------------------------------------------------- HOME ----------------------------------------------------------------------- */
-
-
-.CTAButton {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: #007bff;
-	color: white;
-	padding: 12px 24px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	text-decoration: none;
-	border-radius: 5px;
-}
-
-.CTAButton:hover {
-	background-color: #0056b3;
-}
-
-/* ---------------------------------------------------------------------- SHOULDERS --------------------------------------------------------------------- */
-
-.shoulders {
-	display: inline-block;
-	font-weight: bolder;
-	max-width: 46%;
-	margin-right: 3%;
-	vertical-align: top;
-	margin-bottom: 75px;
-}
-
-.dumbbellShoulderPress {
-	font-weight: 450;
-	font-size: 15px;
-	display: inline-block;
-	margin-top: 8px;
-}
-
-/* ------------------------------------------------------------------------ BACK ------------------------------------------------------------------------ */
-
-.back {
-	display: inline-block;
-	font-weight: bolder;
-	max-width: 46%;
-	margin-right: 3%;
-	vertical-align: top;
-	margin-bottom: 75px;
-}
-
-.deadlifts {
-	font-weight: 450;
-	font-size: 15px;
-	display: inline-block;
-	margin-top: 8px;
-}
-
-/* ------------------------------------------------------------------------ LEGS ------------------------------------------------------------------------ */
-
-.legs {
-	display: inline-block;
-	font-weight: bolder;
-	max-width: 46%;
-	margin-right: 3%;
-	vertical-align: top;
-	margin-bottom: 75px;
-}
-
-.squats {
-	font-weight: 450;
-	font-size: 15px;
-	display: inline-block;
-	margin-top: 8px;
-}
-
-/* ----------------------------------------------------------------------- CARDIO ----------------------------------------------------------------------- */
-
-.cardio {
-	display: inline-block;
-	font-weight: bolder;
-	max-width: 46%;
-	margin-right: 3%;
-	vertical-align: top;
-}
-
-.two2too {
-	font-weight: 450;
-	font-size: 15px;
-	display: inline-block;
-	margin-top: 8px;
 }

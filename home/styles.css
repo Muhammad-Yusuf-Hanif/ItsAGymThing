@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 html {
-	height: 100%; /* Set height for the root elements */
-	margin: 0; /* Remove default margin */
-}
-
-p {
-	font-family: Roboto, arial;
+	height: 100%;
+	margin: 0;
 }
 
 input[name="searchBar"] {
@@ -32,61 +28,48 @@ body {
 	height: 100%;
 }
 
-/* Hero Section Styling */
+h1 {
+	color: #ffffff;
+}
+
+p {
+	color: #ffffff;
+	font-family: roboto, arial;
+}
+
 .HeroSection {
-	position: relative;
+	background-color: rgb(18, 139, 141);
 	text-align: center;
 	width: 100%;
 	height: 100%;
 }
-/* 
-.HeroImage {
-	width: 100%;
-	height: 100%;
-} */
 
 .HeroImage {
-	background-image: url("../assets/barbellBench.jpg");
+	position: absolute;
 	background-size: cover;
 	background-position: center;
 	height: 100%;
 	width: 100%;
+	opacity: 0.9;
+	filter: blur(2px) brightness(75%) contrast(120%)
 }
 
-@media (min-width: 768px) {
-	.HeroImage {
-	background-image: url("../assets/barbellBench.jpg");
-	}
+.textBtnContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	bottom: 10%;
 }
 
-@media (max-width: 768px) {
-	.HeroImage {
-		background-image: url("../assets/mobileHeroImage.avif");
-	}
-}
-
-h1 {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #fff;
-}
-
-p {
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #fff;
-	width: 60%;
+.homepageTitle {
+	width: 300px;
 }
 
 .CTAButton {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	background-color: #007bff;
 	color: white;
 	padding: 12px 24px;
@@ -99,4 +82,28 @@ p {
 
 .CTAButton:hover {
 	background-color: #0056b3;
+}
+
+@media (min-width: 800px) {
+	.HeroImage {
+		background-image: url("../assets/barbellBench.jpg");
+	}
+
+	.homepageText {
+		width: 40%;
+	}
+}
+
+@media (max-width: 799px) {
+	.HeroImage {
+		background-image: url("../assets/mobileHeroImage.jpg");
+	}
+
+	.homepageTitle {
+		margin: 5px;
+	}
+
+	.homepageText {
+		width: 85%;
+	}
 }

@@ -15,6 +15,29 @@
 	margin-right: 10px; /* Adjust label spacing */
 }
 
+@media (min-width: 800px) {
+
+}
+
+@media (max-width: 799px) {
+.contactUsForm form {
+	width: 250px;
+	height: 100vh;
+}
+
+.formRow {
+	max-width: 100%;
+}
+
+.formName {
+	display: block;
+}
+
+.formEmail {
+	display: block;
+}
+}
+
 /* Adjustments for the input fields */
 input[type="text"],
 input[type="email"],
@@ -39,9 +62,9 @@ button:hover {
 
 .formName {
 	display: flex;
-	justify-content: center; /* Center horizontally */
-	align-items: center; /* Center vertically */
-	height: 100px; /* Adjust height as needed */
+	justify-content: center; 
+	align-items: center; 
+	height: 100px; 
 }
 
 .name {
@@ -50,9 +73,9 @@ button:hover {
 
 .formEmail {
 	display: flex;
-	justify-content: center; /* Center horizontally */
-	align-items: center; /* Center vertically */
-	height: 100px; /* Adjust height as needed */
+	justify-content: center; 
+	align-items: center; 
+	height: 100px; 
 }
 
 .email {
