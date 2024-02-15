@@ -35,7 +35,7 @@ html {
 
 /* Hamburger icon button */
 .hamburger {
-	z-index: 1;
+	z-index: 999;
 	font-size: 40px;
 	right: 5px;
 	color: #ffffff;
@@ -79,6 +79,7 @@ html {
 		height: 100%;
 		background-color: transparent;
 		padding-top: 20px;
+		display: none;
 	}
 
 	.navbar-links.active {
