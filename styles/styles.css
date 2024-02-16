@@ -43,7 +43,6 @@ html {
 	border: none;
 	cursor: pointer;
 	display: none;
-	position: fixed;
 	transition: transform 0.3s ease; /* Smooth transition for the transform */
 }
 
@@ -65,6 +64,14 @@ html {
 
 /* Responsive: Display the hamburger icon on smaller screens */
 @media screen and (max-width: 799px) {
+	.hamburgerContainer {
+		background-color: black;
+		width: 100%;
+		display: flex;
+		justify-content: right;
+		margin-bottom: 3px;
+	}
+
 	.hamburger {
 		display: flex;
 	}

@@ -105,4 +105,9 @@ p {
 	.homepageText {
 		width: 85%;
 	}
+	
+	.hamburgerContainer {
+		position: absolute;
+		right: 10px;
+	}
 }
