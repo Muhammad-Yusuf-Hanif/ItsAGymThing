@@ -12,101 +12,111 @@
 	<body>
 		<div id="navbar"></div>
 
-		<div class="MainPage">
-			<div class="Exercises">
-				<div class="title">
-					Chest Exercises
-					<div class="accordion">
-						<div class="label">
-							<div class="exerciseText">
-								Dumbbell Chest Press: <br />
-								In this exercise you will concentrate on keeping the correct
-								form to reduce any chance of injury. The best way of doing this
-								is by ensuring you are setup correctly regardless of the weight.
-								This is due to joints & mobility playing a massive role instead
-								of the chest muscles themselves. See below how to setup on the
-								bench correctly.
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="title">
-					Shoulder Exercises
-					<div class="accordion">
-						<div class="label">Compound</div>
-						<div class="exerciseText">
-							Dumbbell/Military Shoulder Press: <br />
+		<div class="backgroundImg">
+			<div class="accordion-container">
+				<div class="accordion" id="accordionItem1">
+					<button
+						class="accordionBtn closed"
+						onclick="toggleAccordion('accordionItem1')"
+					>
+						<h4 class="accordionTitle">Chest</h4>
+					</button>
+					<div class="panel">
+						<h3>Dumbbell Chest Press:</h3>
+						<p>
 							In this exercise you will concentrate on keeping the correct form
 							to reduce any chance of injury. The best way of doing this is by
 							ensuring you are setup correctly regardless of the weight. This is
 							due to joints & mobility playing a massive role instead of the
 							chest muscles themselves. See below how to setup on the bench
 							correctly.
-						</div>
+						</p>
 					</div>
 				</div>
 
-				<div class="title">
-					Back Exercises
-					<div class="accordion">
-						<div class="label">
-							<div class="exerciseText">
-								Deadlifts <br />
-								In this exercise you will concentrate on keeping the correct
-								form to reduce any chance of injury. The best way of doing this
-								is by ensuring you are setup correctly regardless of the weight.
-								This is due to joints & mobility playing a massive role instead
-								of the chest muscles themselves. See below how to setup on the
-								bench correctly.
-							</div>
-						</div>
+				<div class="accordion" id="accordionItem2">
+					<button
+						class="accordionBtn closed"
+						onclick="toggleAccordion('accordionItem2')"
+					>
+						<h4 class="accordionTitle">Shoulders</h4>
+					</button>
+					<div class="panel">
+						<h3>Dumbbell Shoulder/Military Press:</h3>
+						<p>
+							In this exercise you will concentrate on keeping the correct form
+							to reduce any chance of injury. The best way of doing this is by
+							ensuring you are setup correctly regardless of the weight. This is
+							due to joints & mobility playing a massive role instead of the
+							chest muscles themselves. See below how to setup on the bench
+							correctly.
+						</p>
 					</div>
 				</div>
 
-				<div class="title">
-					Leg Exercises
-					<div class="accordion">
-						<div class="label">
-							<div class="exerciseText">
-								Squats <br />
-								In this exercise you will concentrate on keeping the correct
-								form to reduce any chance of injury. The best way of doing this
-								is by ensuring you are setup correctly regardless of the weight.
-								This is due to joints & mobility playing a massive role instead
-								of the chest muscles themselves. See below how to setup on the
-								bench correctly.
-							</div>
-						</div>
+				<div class="accordion" id="accordionItem3">
+					<button
+						class="accordionBtn closed"
+						onclick="toggleAccordion('accordionItem3')"
+					>
+						<h4 class="accordionTitle">Back</h4>
+					</button>
+					<div class="panel">
+						<h3>Deadlifts</h3>
+						<p>
+							In this exercise you will concentrate on keeping the correct form
+							to reduce any chance of injury. The best way of doing this is by
+							ensuring you are setup correctly regardless of the weight. This is
+							due to joints & mobility playing a massive role instead of the
+							chest muscles themselves. See below how to setup on the bench
+							correctly.
+						</p>
 					</div>
 				</div>
 
-				<div class="title">
-					Cardio Exercises
-					<div class="accordion">
-						<div class="label">
-							<div class="exerciseText">
-								Two2Too <br />
-								In this exercise you will concentrate on keeping the correct
-								form to reduce any chance of injury. The best way of doing this
-								is by ensuring you are setup correctly regardless of the weight.
-								This is due to joints & mobility playing a massive role instead
-								of the chest muscles themselves. See below how to setup on the
-								bench correctly.
-							</div>
-						</div>
+				<div class="accordion" id="accordionItem4">
+					<button
+						class="accordionBtn closed"
+						onclick="toggleAccordion('accordionItem4')"
+					>
+						<h4 class="accordionTitle">Legs</h4>
+					</button>
+					<div class="panel">
+						<h3>Squats</h3>
+						<p>
+							In this exercise you will concentrate on keeping the correct form
+							to reduce any chance of injury. The best way of doing this is by
+							ensuring you are setup correctly regardless of the weight. This is
+							due to joints & mobility playing a massive role instead of the
+							chest muscles themselves. See below how to setup on the bench
+							correctly.
+						</p>
 					</div>
 				</div>
 
-				<!-- <div class="shoulders">
-          Shoulder Exercises
-            <div class="accordion">
-              <div class="shoulderPress">
-
-              </div>
-            </div>
-        </div> -->
+				<div class="accordion" id="accordionItem5">
+					<button
+						class="accordionBtn closed"
+						onclick="toggleAccordion('accordionItem5')"
+					>
+						<h4 class="accordionTitle">Cardio</h4>
+					</button>
+					<div class="panel">
+						<h3>Two2Too</h3>
+						<p>
+							In this exercise you will concentrate on keeping the correct form
+							to reduce any chance of injury. The best way of doing this is by
+							ensuring you are setup correctly regardless of the weight. This is
+							due to joints & mobility playing a massive role instead of the
+							chest muscles themselves. See below how to setup on the bench
+							correctly.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
+
+		<script src="../scripts/index.js"></script>
+		<script src="Exercise_script/index.js"></script>
 	</body>
 </html>

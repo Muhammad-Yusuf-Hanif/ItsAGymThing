@@ -14,10 +14,8 @@ fetch("../components/navbar.html")
 			console.log(mobileNavbar.display)
 			if (mobileNavbar.display === "none") {
 				mobile_Navbar.style.display = "flex";
-				console.log("first");
 			} else if (mobileNavbar.display === "flex") {
 				mobile_Navbar.style.display = "none";
-				console.log("second");
 			}
 		});
 	})

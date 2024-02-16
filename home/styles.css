@@ -36,6 +36,11 @@ p {
 	font-family: roboto, arial;
 }
 
+.desktop-navbar {
+	position: fixed;
+	background-color: transparent !important;
+}
+
 .HeroSection {
 	background-color: rgb(18, 139, 141);
 	text-align: center;

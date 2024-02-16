@@ -1,9 +1,10 @@
 .title {
 	display: inline-block;
 	font-weight: bolder;
-	max-width: 46%;
+	max-width: 45%;
 	margin-right: 3%;
-	margin-bottom: 75px;
+	margin-bottom: 10%;
+	margin-top: 10px;
 }
 
 .exerciseText {
@@ -11,4 +12,32 @@
 	font-size: 15px;
 	display: inline-block;
 	margin-top: 8px;
+}
+
+.accordionBtn {
+  background-color: rgb(77, 191, 191);
+  color: black;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 16px;
+}
+
+.accordionBtn.open {
+  background-color: rgba(182, 225, 250, 0.58);
+}
+
+.panel {
+  display: none;
+  padding-left: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordionTitle {
+	margin: 2px;
 }
