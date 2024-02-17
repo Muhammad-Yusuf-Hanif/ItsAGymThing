@@ -55,7 +55,7 @@ p {
 	height: 100%;
 	width: 100%;
 	opacity: 0.9;
-	filter: blur(2px) brightness(75%) contrast(120%)
+	filter: blur(3px) brightness(75%) contrast(130%)
 }
 
 .textBtnContainer {
@@ -95,6 +95,7 @@ p {
 
 	.homepageText {
 		width: 40%;
+		font-size: 18px;
 	}
 }
 
