@@ -1,56 +1,48 @@
 .container {
-  text-align: center;
-  font-weight: lighter !important;
+	text-align: center;
+	font-weight: lighter !important;
 }
 
 .chestExercises {
-  justify-content: center;
-  gap: 3%;
+	justify-content: center;
+	gap: 3%;
 }
 
 @media (min-width: 800px) {
-  .leftVideoContainer {
-    display: inline-block;
-    max-width: 49%;
-    margin-right: 20px;
-  }
+	.leftVideoContainer {
+		display: inline-block;
+		max-width: 49%;
+		margin-right: 20px;
+	}
 
-  .rightVideoContainer {
-    display: inline-block;
-    max-width: 49%;
-  }
+	.rightVideoContainer {
+		display: inline-block;
+		max-width: 49%;
+	}
 
-  .leftVideo {
-    width: 100%;
-    height: 350px;
-  }
+	.leftVideo {
+		width: 100%;
+		height: 350px;
+	}
 
-  .rightVideo {
-    width: 100%;
-    height: 350px;
-  }
+	.rightVideo {
+		width: 100%;
+		height: 350px;
+	}
 }
 
 @media (max-width: 799px) {
-  .leftVideoContainer {
-    display: block;
-    width: 400px;
+	.leftVideoContainer,
+	.rightVideoContainer {
+		display: block;
+		width: 100%;
+		height: 550px;
     margin-bottom: 50px;
-  }
+	}
 
-  .rightVideoContainer {
-    display: block;
-    width: 400px;
-  }
-
-  .leftVideo {
-    width: 100%;
-    height: 225px;
-  }
-
-  .rightVideo {
-    width: 100%;
-    height: 225px;
-  }
+	.leftVideo,
+	.rightVideo {
+		width: 100%;
+		height: 50%;
+	}
 }
-

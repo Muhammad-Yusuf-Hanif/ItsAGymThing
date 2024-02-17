@@ -21,7 +21,7 @@ input[name="searchBar"]:focus {
 
 /* General Body Styling */
 body {
-	font-family: Arial, sans-serif;
+	font-family: roboto;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -33,7 +33,7 @@ h1 {
 
 p {
 	color: #ffffff;
-	font-family: roboto, arial;
+	font-family: roboto;
 }
 
 .desktop-navbar {

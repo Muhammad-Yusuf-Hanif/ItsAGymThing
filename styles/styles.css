@@ -15,7 +15,7 @@
 .desktop-navbar {
 	background-color: black;
 	margin-bottom: 2px;
-	top: 7px
+	top: 7px;
 }
 
 .desktop-navbar a,
@@ -55,9 +55,9 @@
 }
 
 @media (min-width: 800px) {
-.desktop-navbar{
-	justify-content: center;
-}
+	.desktop-navbar {
+		justify-content: center;
+	}
 
 	.mobile-navbar {
 		display: none;

@@ -1,32 +1,47 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-.panelText {
-font-family: roboto, arial;
-line-height: 3vh;
+.faqText {
+	font-family: roboto;
+}
+
+.accordion-container,
+.closed {
+	background-image: linear-gradient(
+		to right,
+		rgba(42, 41, 41, 0.8),
+		rgba(72, 105, 100, 0.916),
+		rgba(58, 127, 172, 0.767)
+	);
+	color: white;
+	padding-left: 15px;
+	font-family: roboto;
+	letter-spacing: 1px;
 }
 
 .accordionBtn {
-  background-color: rgb(77, 191, 191);
-  color: black;
-  padding: 10px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .accordionBtn.open {
-  background-color: rgba(182, 225, 250, 0.58);
+	background-color: rgba(182, 225, 250, 0.58);
 }
 
 .panel {
-  display: none;
-  padding: 20px;
-  background-color: white;
-  overflow: hidden;
+	display: none;
+	padding: 20px;
+	overflow: hidden;
 }
 
+.faqText {
+	padding-left: 15px;
+	font-family: roboto;
+	letter-spacing: 1px;
+}
